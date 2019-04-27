@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+<script type="text/javascript">
+ document.write("<table  border='1px'><thead><tr><th>TYPE</th><th>MODEL</th><th>COLOR</th></tr></thead><tbody>")
+var car = [{type:"BMW", model:"M240i Coupe", color:"black"},
+           {type:"BMW", model:"2 Series Cabriolet", color:"red"},
+           {type:"BMW", model:"M2 Competition", color:"white"},
+           {type:"BMW", model:"M4 Coupe", color:"black"},
+           {type:"BMW", model:"4 Series Gran Coupe", color:"black"},
+           {type:"Mercedes-Benz", model:"A Class-Sedan", color:"silver"},
+           {type:"Mercedes-Benz", model:"C Class-Sedan", color:"gold"},
+           {type:"Mercedes-Benz", model:"E Class-Sedan", color:"black"},
+           {type:"Mercedes-Benz", model:"S Class-Sedan", color:"white"},
+           {type:"Mercedes-Benz", model:"Mercedes-Meybach", color:"red"}];
+var x = "<tbody>"
+for (i=0; i<=car.length; i++) {
+   document.write("<tr><td>"+car[i].type+"</td><td>"+car[i].model+"</td><td>"+car[i].color+"</td></tr>")
+}
+document.write("</tbody></table>");
+</script>
+</body>
+</html>
